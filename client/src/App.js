@@ -9,7 +9,12 @@ import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
-import { StoreProvider } from "./utils/GlobalState";
+
+// import redux hook and store
+import { Provider } from 'react-redux';
+// import { StoreProvider } from "./utils/GlobalState";
+import store from './utils/store';
+
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
 
@@ -31,7 +36,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <StoreProvider>
+          <Provider store={store}>
             <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
@@ -42,7 +47,7 @@ function App() {
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
             </Switch>
-          </StoreProvider>
+          </Provider>
         </div>
       </Router>
     </ApolloProvider>
