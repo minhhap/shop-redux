@@ -1,5 +1,5 @@
 # shop-redux
-E-commerce platform using Redux for state management.
+E-commerce platform using Redux for state management. Users can browse products by category, add products to cart, and sign up or log in to check out using credit card via Stripe payment platform. The website also has offline functionalities to allow users to see products when the internet is down.
 
 ## Technologies
 * React
@@ -9,6 +9,8 @@ E-commerce platform using Redux for state management.
 * Apollo GraphQL
 * Express.js
 * Heroku
+* Serviceworker
+* IndexDB
 
 ## Screenshot
 <div>
