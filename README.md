@@ -11,6 +11,7 @@ E-commerce platform using Redux for state management. Users can browse products 
 * Heroku
 * Serviceworker
 * IndexDB
+* JWT
 
 ## Screenshot
 <div>
